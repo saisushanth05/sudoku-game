@@ -41,14 +41,14 @@ form {
   text-align: center;
   line-height: 40px;
   background-color: black;
-  color: white;
+  color: rgb(8, 241, 8);
   border: 1px solid white;
   font-size: 18px;
   cursor: pointer;
 }
 
 .cell.fixed {
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.479);
   cursor: not-allowed;
 }
 
@@ -74,4 +74,23 @@ form {
 
 .num-btn:hover {
   background-color: grey;
+}
+
+#submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: grey;
+  color: white;
+  border: none;
+  cursor: not-allowed;
+}
+
+#submit-btn.enabled {
+  background-color: green;
+  cursor: pointer;
+}
+
+#submit-btn:hover.enabled {
+  background-color: darkgreen;
 }
